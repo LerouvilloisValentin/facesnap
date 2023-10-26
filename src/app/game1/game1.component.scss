@@ -37,60 +37,60 @@
   position: absolute;
   width: 100px;
   height: 100px;
-  bottom: 500px;
-  right: 800px;
+  bottom: 450px;
+  right: 700px;
 }
 
 .cube2{
   @extend .cube;
-  bottom: 100px;
-  right: 800px;
+  bottom: 50px;
+  right: 700px;
 }
 
 .cube3{
   @extend .cube;
-  bottom: 300px;
-  right: 800px;
+  bottom: 250px;
+  right: 700px;
 }
 .cube4{
   @extend .cube;
-  bottom: 300px;
-  right: 600px;
+  bottom: 250px;
+  right: 500px;
 }
 .cube5{
   @extend .cube;
-  bottom: 500px;
-  right: 600px;
+  bottom: 450px;
+  right: 500px;
 }
 .cube6{
   @extend .cube;
-  bottom: 600px;
-  right: 700px;
+  bottom: 550px;
+  right: 600px;
 }
 .cube7{
   @extend .cube;
-  bottom: 700px;
-  right: 600px;
+  bottom: 650px;
+  right: 500px;
 }
 .cube8{
   @extend .cube;
-  bottom: 700px;
-  right: 800px;
+  bottom: 650px;
+  right: 700px;
 }
 .cube9{
   @extend .cube;
-  bottom: 400px;
-  right: 700px;
+  bottom: 350px;
+  right: 600px;
 }
 .cube10{
   @extend .cube;
-  bottom: 200px;
-  right: 700px;
+  bottom:150px;
+  right: 600px;
 }
 .cube11{
   @extend .cube;
-  bottom: 100px;
-  right: 600px;
+  bottom: 50px;
+  right: 500px;
 }
 
 
