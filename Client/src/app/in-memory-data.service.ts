@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { InMemoryDbService, RequestInfo } from 'angular-in-memory-web-api';
-import { FaceSnapsServices } from './services/face-snap.service';
+import { FaceSnapsServices } from './core/services/face-snap.service';
 
 
 @Injectable({

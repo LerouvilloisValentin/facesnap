@@ -5,10 +5,10 @@ import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-landing-page-component',
-  templateUrl: './landing-page-component.component.html',
-  styleUrls: ['./landing-page-component.component.scss']
+  templateUrl: './landing-page-component.html',
+  styleUrls: ['./landing-page-component.scss']
 })
-export class LandingPageComponentComponent implements OnInit {
+export class LandingPageComponent implements OnInit {
 
   userEmail! : string
 
