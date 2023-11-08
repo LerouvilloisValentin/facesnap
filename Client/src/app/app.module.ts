@@ -11,12 +11,16 @@ import { Game1Component } from './game1/game1.component';
 import { CoreModule } from './core/core.module';
 import { FaceSnapsModule } from './face-snaps/face-snaps.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
+import { CulinaireComponent } from './Culinaire/components/exp-culinaire-list/culinaire.component';
+import { SingleCulinaireComponent } from './Culinaire/components/single-culinaire/single-culinaire.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     Game1Component,
+    CulinaireComponent,
+    SingleCulinaireComponent,
   ],
   imports: [
     BrowserModule,

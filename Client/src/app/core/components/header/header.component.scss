@@ -1,13 +1,17 @@
 header {
   text-align: center;
-  background-color: #EEE;
+  background-color: #cac7c7;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 20px;
+  background-image: linear-gradient(rgba(159, 106, 106, 0.7), rgba(6, 6, 6, 1));
+  // background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid red($color: #f00c0c);
 }
 
 a {
   margin: 0 10px;
-  color: #333;
+  color: #9d8787;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -15,6 +19,6 @@ a {
 }
 
 .active {
-  color: #666;
+  color: #e9dddd;
   text-decoration: underline;
 }
