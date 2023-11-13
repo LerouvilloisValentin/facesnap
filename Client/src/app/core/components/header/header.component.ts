@@ -15,6 +15,15 @@ export class HeaderComponent {
   }
 
   onAddNewFaceSnap(): void {
-    this.router.navigateByUrl("/create")
+    const currentUrl = this.router.url
+    if(currentUrl === "/facesnaps"){
+      this.router.navigateByUrl("facesnaps/create")
+    } else if (currentUrl === "/culinaire") {
+      this.router.navigateByUrl("culinaire/create")
+    }
+  }
+
+  isFaceSnapRoute(): boolean {
+    return this.router.url === '/facesnaps' || this.router.url === '/culinaire'  ;
   }
 }

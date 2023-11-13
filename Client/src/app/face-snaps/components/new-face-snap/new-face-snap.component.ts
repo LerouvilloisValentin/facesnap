@@ -4,6 +4,7 @@ import { Observable, interval, map, tap } from 'rxjs';
 import { FaceSnap } from '../../../core/models/face-snap.models';
 import { FaceSnapsServices } from '../../../core/services/face-snap.service';
 import { Router } from '@angular/router';
+import { CulinaireServices } from 'src/app/core/services/culinaire.service';
 
 @Component({
   selector: 'app-new-face-snap',
@@ -17,6 +18,7 @@ export class NewFaceSnapComponent implements OnInit {
 
   constructor(private formBuilder : FormBuilder,
               private faceSnapsServices : FaceSnapsServices,
+              private culinaireServices : CulinaireServices,
               private router : Router
   ) {
 
@@ -44,8 +46,15 @@ export class NewFaceSnapComponent implements OnInit {
   }
 
   onSubmitForm(): void {
-    this.faceSnapsServices.addFaceSnap(this.snapForm.value).pipe(
-      tap(()=> this.router.navigateByUrl("/facesnaps"))
-      ).subscribe()
+    const currentUrl = this.router.url
+    if ( currentUrl === "/facesnaps/create"){
+      this.faceSnapsServices.addFaceSnap(this.snapForm.value).pipe(
+        tap(()=> this.router.navigateByUrl("/facesnaps"))
+        ).subscribe()
+      } else if ( currentUrl === "/culinaire/create"){
+        this.culinaireServices.addCulinaireExp(this.snapForm.value).pipe(
+          tap(()=> this.router.navigateByUrl("/culinaire"))
+          ).subscribe()
+      }
   }
 }

@@ -9,13 +9,14 @@ import { CulinaireComponent } from './Culinaire/components/exp-culinaire-list/cu
 import { SingleCulinaireComponent } from './Culinaire/components/single-culinaire/single-culinaire.component';
 
 const routes : Routes= [
+  {path : 'facesnaps/create', component: NewFaceSnapComponent},
   {path : 'facesnaps/:id', component: SingleFaceSnapComponent },
   {path : 'facesnaps', component: FaceSnapListComponent },
+  {path : 'culinaire/create', component: NewFaceSnapComponent },
   {path : 'culinaire/:id', component: SingleCulinaireComponent },
   {path : 'culinaire', component: CulinaireComponent },
   {path : '', component: LandingPageComponent },
   {path : 'game', component: Game1Component},
-  {path : 'create', component: NewFaceSnapComponent}
 
 
 ]

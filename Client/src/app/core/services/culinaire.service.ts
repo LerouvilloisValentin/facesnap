@@ -30,17 +30,17 @@ export class CulinaireServices {
   // }
 
 
-  // addFaceSnap(formValue: { title: string, description: string, imageUrl: string, location?: string }) : Observable<FaceSnap> {
-  //  return this.getAllFaceSnaps().pipe(
-  //   map(facesnaps => [...facesnaps].sort((a:FaceSnap, b: FaceSnap) => a.id - b.id)),
-  //   map(sortedFacesnaps => sortedFacesnaps[sortedFacesnaps.length - 1]),
-  //   map(previousFacesnaps => ({
-  //     ...formValue,
-  //     snaps:0,
-  //     createdDate: new Date(),
-  //     id: previousFacesnaps.id + 1
-  //   })),
-  //   switchMap(newFacesnap=> this.http.post<FaceSnap>('http://localhost:3000/facesnaps', newFacesnap))
-  //  )
-  // }
+  addCulinaireExp(formValue: { title: string, description: string, imageUrl: string, location?: string }) : Observable<FaceSnap> {
+   return this.getAllCulinaire().pipe(
+    map(facesnaps => [...facesnaps].sort((a:FaceSnap, b: FaceSnap) => a.id - b.id)),
+    map(sortedFacesnaps => sortedFacesnaps[sortedFacesnaps.length - 1]),
+    map(previousFacesnaps => ({
+      ...formValue,
+      snaps:0,
+      createdDate: new Date(),
+      id: previousFacesnaps.id + 1
+    })),
+    switchMap(newFacesnap=> this.http.post<FaceSnap>('http://localhost:3000/culinaire', newFacesnap))
+   )
+  }
 }
