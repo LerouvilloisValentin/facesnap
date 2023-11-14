@@ -5,6 +5,7 @@ import { FaceSnap } from '../../../core/models/face-snap.models';
 import { FaceSnapsServices } from '../../../core/services/face-snap.service';
 import { Router } from '@angular/router';
 import { CulinaireServices } from 'src/app/core/services/culinaire.service';
+import { GameServices } from 'src/app/core/services/game.service';
 
 @Component({
   selector: 'app-new-face-snap',
@@ -19,6 +20,7 @@ export class NewFaceSnapComponent implements OnInit {
   constructor(private formBuilder : FormBuilder,
               private faceSnapsServices : FaceSnapsServices,
               private culinaireServices : CulinaireServices,
+              private gameServices : GameServices,
               private router : Router
   ) {
 
@@ -54,6 +56,11 @@ export class NewFaceSnapComponent implements OnInit {
       } else if ( currentUrl === "/culinaire/create"){
         this.culinaireServices.addCulinaireExp(this.snapForm.value).pipe(
           tap(()=> this.router.navigateByUrl("/culinaire"))
+          ).subscribe()
+      }
+      else if ( currentUrl === "/game/create"){
+        this.gameServices.addGameExp(this.snapForm.value).pipe(
+          tap(()=> this.router.navigateByUrl("/game"))
           ).subscribe()
       }
   }

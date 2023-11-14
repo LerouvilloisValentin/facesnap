@@ -20,10 +20,12 @@ export class HeaderComponent {
       this.router.navigateByUrl("facesnaps/create")
     } else if (currentUrl === "/culinaire") {
       this.router.navigateByUrl("culinaire/create")
+    }else if (currentUrl === "/game") {
+      this.router.navigateByUrl("game/create")
     }
   }
 
   isFaceSnapRoute(): boolean {
-    return this.router.url === '/facesnaps' || this.router.url === '/culinaire'  ;
+    return this.router.url === '/facesnaps' || this.router.url === '/culinaire' || this.router.url === '/game'  ;
   }
 }

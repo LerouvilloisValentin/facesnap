@@ -6,7 +6,7 @@
       "description": "Mon meilleur ami depuis tout petit !",
       "imageUrl": "assets/image/chinese-background.jpg",
       "createdDate": "Mon Dec 13 2021 14:51:42 GMT+0100 (Central European Standard Time)",
-      "snaps": 95,
+      "snaps": 96,
       "location": "Paris"
     },
     {
@@ -17,50 +17,6 @@
       "createdDate": "Mon Dec 13 2021 14:51:42 GMT+0100 (Central European Standard Time)",
       "snaps": 6,
       "location": "la montagne"
-    },
-    {
-      "id": 3,
-      "title": "Un bon repas",
-      "description": "Mmmh que c'est bon !",
-      "imageUrl": "https://wtop.com/wp-content/uploads/2020/06/HEALTHYFRESH.jpg",
-      "createdDate": "Mon Dec 13 2021 14:51:42 GMT+0100 (Central European Standard Time)",
-      "snaps": 156
-    },
-    {
-      "title": "Un exemple",
-      "description": "UN EXEMPLE D'exemple",
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg",
-      "location": "Toulouse",
-      "snaps": 0,
-      "createdDate": "2023-11-13T19:36:00.208Z",
-      "id": 4
-    },
-    {
-      "title": "b",
-      "description": "bil",
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg",
-      "location": "ih",
-      "snaps": 0,
-      "createdDate": "2023-11-13T20:58:44.415Z",
-      "id": 5
-    },
-    {
-      "title": "hil",
-      "description": "h",
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg",
-      "location": "h",
-      "snaps": 0,
-      "createdDate": "2023-11-13T20:59:02.065Z",
-      "id": 6
-    },
-    {
-      "title": "io",
-      "description": "no,",
-      "imageUrl": "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg",
-      "location": "ufuk",
-      "snaps": 0,
-      "createdDate": "2023-11-13T21:00:23.792Z",
-      "id": 7
     }
   ],
   "culinaire": [
@@ -81,6 +37,44 @@
       "snaps": 0,
       "createdDate": "2023-11-13T21:00:38.919Z",
       "id": 2
+    }
+  ],
+  "game": [
+    {
+      "id": 1,
+      "title": "Archi",
+      "description": "Mon ami depuis tout petit !",
+      "imageUrl": "assets/image/chinese-background.jpg",
+      "createdDate": "Mon Dec 13 2021 14:51:42 GMT+0100 (Central European Standard Time)",
+      "snaps": 91,
+      "location": "Poi"
+    },
+    {
+      "id": 2,
+      "title": "game",
+      "description": "jobug",
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg",
+      "location": "gutemberg",
+      "snaps": 0,
+      "createdDate": "2023-11-13T21:00:38.919Z"
+    },
+    {
+      "id": 3,
+      "title": "Archi",
+      "description": "Mon ami depuis tout petit !",
+      "imageUrl": "assets/image/chinese-background.jpg",
+      "createdDate": "Mon Dec 13 2021 14:51:42 GMT+0100 (Central European Standard Time)",
+      "snaps": 91,
+      "location": "Poi"
+    },
+    {
+      "title": "gege",
+      "description": "gegege",
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg",
+      "location": "eggege",
+      "snaps": 0,
+      "createdDate": "2023-11-14T18:39:41.659Z",
+      "id": 4
     }
   ]
 }

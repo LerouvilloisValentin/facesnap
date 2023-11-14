@@ -7,20 +7,24 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { Game1Component } from './game1/game1.component';
+import { TrapComponent } from './trap/game1.component';
 import { CoreModule } from './core/core.module';
 import { FaceSnapsModule } from './face-snaps/face-snaps.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { CulinaireComponent } from './Culinaire/components/exp-culinaire-list/culinaire.component';
 import { SingleCulinaireComponent } from './Culinaire/components/single-culinaire/single-culinaire.component';
+import { GameListComponent } from './game/components/game-list/game-list.component';
+import { SingleGameComponent } from './game/components/single-game/single-game.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Game1Component,
+    TrapComponent,
     CulinaireComponent,
     SingleCulinaireComponent,
+    GameListComponent,
+    SingleGameComponent,
   ],
   imports: [
     BrowserModule,

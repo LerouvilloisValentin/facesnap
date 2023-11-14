@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './game1.component.html',
   styleUrls: ['./game1.component.scss']
 })
-export class Game1Component {
+export class TrapComponent {
 
   constructor(
     private route : ActivatedRoute,

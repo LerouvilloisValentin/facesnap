@@ -40,6 +40,8 @@ onViewFaceSnap(){
       this.router.navigateByUrl(`facesnaps/${this.faceSnap.id}`)
     } else if ( currentUrl === "/culinaire"){
       this.router.navigateByUrl(`culinaire/${this.faceSnap.id}`)
+    } else if ( currentUrl === "/game"){
+      this.router.navigateByUrl(`game/${this.faceSnap.id}`)
     }
   }
 }
