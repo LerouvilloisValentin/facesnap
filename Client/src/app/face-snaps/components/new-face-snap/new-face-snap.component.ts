@@ -26,6 +26,28 @@ export class NewFaceSnapComponent implements OnInit {
 
   }
 
+  imageUrl: string | ArrayBuffer | null = null;
+  selectedFile: File | null = null;
+
+  onFileSelected(event: any): void {
+    // Récupérer le fichier sélectionné
+    this.selectedFile = event.target.files[0];
+  }
+
+  uploadImage(): void {
+    if (this.selectedFile) {
+      // Lire le fichier en tant qu'URL data
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        // Afficher l'image sur la page
+        if (e.target) {
+          this.imageUrl = e.target.result as string | ArrayBuffer | null;
+        }
+      };
+      reader.readAsDataURL(this.selectedFile);
+    }
+  }
+
   ngOnInit(): void {
     this.urlRegex = /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&/=]*)/;
     this.snapForm = this.formBuilder.group({
@@ -64,4 +86,7 @@ export class NewFaceSnapComponent implements OnInit {
           ).subscribe()
       }
   }
+
+
+
 }
