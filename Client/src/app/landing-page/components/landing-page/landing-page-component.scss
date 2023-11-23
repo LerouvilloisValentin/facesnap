@@ -1,6 +1,6 @@
 .landing-block {
   position: absolute;
-  top: 50%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -16,14 +16,15 @@ button{
 
 .image_menu{
   height: 40vh;
-  width: 120vh;
-  opacity: 0.4;
+  width: 110vh;
+  opacity: 0.8;
   margin-bottom: 15px;
+  // padding-left: 5%;
 }
 
 .introduction{
   color: aliceblue;
-  padding: 1% 10% 1%;
+  // padding: 4% 4% 1% 4%;
   text-align: center;
   font-weight: bold;
   font-size: 1.2em;
