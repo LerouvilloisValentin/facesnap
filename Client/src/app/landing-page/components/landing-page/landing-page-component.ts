@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
+import { FooterComponent } from 'src/app/footer/footer.component';
 
 
 @Component({
   selector: 'app-landing-page-component',
-  templateUrl: './landing-page-component.html',
+  templateUrl: './landing-page-component.html', 
   styleUrls: ['./landing-page-component.scss']
 })
 export class LandingPageComponent implements OnInit {

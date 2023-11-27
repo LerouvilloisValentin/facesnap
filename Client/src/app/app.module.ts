@@ -15,6 +15,7 @@ import { CulinaireComponent } from './Culinaire/components/exp-culinaire-list/cu
 import { SingleCulinaireComponent } from './Culinaire/components/single-culinaire/single-culinaire.component';
 import { GameListComponent } from './game/components/game-list/game-list.component';
 import { SingleGameComponent } from './game/components/single-game/single-game.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { SingleGameComponent } from './game/components/single-game/single-game.c
     SingleCulinaireComponent,
     GameListComponent,
     SingleGameComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
