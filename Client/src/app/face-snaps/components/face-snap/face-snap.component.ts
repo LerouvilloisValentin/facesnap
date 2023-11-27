@@ -36,8 +36,8 @@ export class FaceSnapComponent implements OnInit {
 
 onViewFaceSnap(){
     const currentUrl = this.router.url
-    if ( currentUrl === "/facesnaps"){
-      this.router.navigateByUrl(`facesnaps/${this.faceSnap.id}`)
+    if ( currentUrl === "/destinations"){
+      this.router.navigateByUrl(`destinations/${this.faceSnap.id}`)
     } else if ( currentUrl === "/culinaire"){
       this.router.navigateByUrl(`culinaire/${this.faceSnap.id}`)
     } else if ( currentUrl === "/game"){

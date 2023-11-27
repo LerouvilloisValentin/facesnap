@@ -11,9 +11,9 @@ import { GameListComponent } from './game/components/game-list/game-list.compone
 import { SingleGameComponent } from './game/components/single-game/single-game.component';
 
 const routes : Routes= [
-  {path : 'facesnaps/create', component: NewFaceSnapComponent},
-  {path : 'facesnaps/:id', component: SingleFaceSnapComponent },
-  {path : 'facesnaps', component: FaceSnapListComponent },
+  {path : 'destinations/create', component: NewFaceSnapComponent},
+  {path : 'destinations/:id', component: SingleFaceSnapComponent },
+  {path : 'destinations', component: FaceSnapListComponent },
   {path : 'game/create', component: NewFaceSnapComponent },
   {path : 'game/:id', component: SingleGameComponent },
   {path : 'game', component: GameListComponent },

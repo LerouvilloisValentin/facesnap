@@ -19,7 +19,19 @@ export class LandingPageComponent implements OnInit {
   }
 
   onContinue() : void {
-    this.router.navigateByUrl('facesnaps')
+    this.router.navigateByUrl('destinations')
+  }
+
+  onClickMenuDestination() : void {
+    this.router.navigateByUrl('destinations')
+  }
+
+  onClickMenuCulinaire() : void {
+    this.router.navigateByUrl('culinaire')
+  }
+
+  onClickMenuGame() : void {
+    this.router.navigateByUrl('game')
   }
 
   onSubmitForm(form : NgForm): void {

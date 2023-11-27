@@ -71,9 +71,9 @@ export class NewFaceSnapComponent implements OnInit {
 
   onSubmitForm(): void {
     const currentUrl = this.router.url
-    if ( currentUrl === "/facesnaps/create"){
+    if ( currentUrl === "/destinations/create"){
       this.faceSnapsServices.addFaceSnap(this.snapForm.value).pipe(
-        tap(()=> this.router.navigateByUrl("/facesnaps"))
+        tap(()=> this.router.navigateByUrl("/destinations"))
         ).subscribe()
       } else if ( currentUrl === "/culinaire/create"){
         this.culinaireServices.addCulinaireExp(this.snapForm.value).pipe(

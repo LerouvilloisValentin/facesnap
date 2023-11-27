@@ -6,16 +6,16 @@
   </form> -->
   <div class="introduction">Bienvenue sur le site d'ExpSharing pour le partage d'expérience. Ici vous pouvez consultez mais aussi partager vos expériences sur 3 sujets différents : <br>
     Vos plus beau voyage, expérience culinaire, et sur vos jeux vidéos préférés.</div>
-  <img class="image_menu" src="\assets\image\The Blind Ninja.gif"  alt="Snapface logo" >
+  <img class="image_menu" (click)="onClickMenuDestination()" src="\assets\image\The Blind Ninja.gif"  alt="Snapface logo" >
   <div class="landing-links">
-    <button style="color:aliceblue" (click)="onContinue()">Continuer vers le menu d'ExpSharing</button>
+    <button style="color:aliceblue" (click)="onClickMenuDestination()">Continuer vers le menu d'Exp Destination</button>
   </div>
-  <img class="image_menu" src="\assets\image\food.gif"  alt="Snapface logo" >
+  <img class="image_menu" (click)="onClickMenuCulinaire()" src="\assets\image\food.gif"  alt="Snapface logo" >
   <div class="landing-links">
-    <button style="color:aliceblue" (click)="onContinue()">Continuer vers le menu d'ExpSharing</button>
+    <button style="color:aliceblue" (click)="onClickMenuCulinaire()">Continuer vers le menu d'Exp Culinaire</button>
   </div>
-  <img class="image_menu" src="\assets\image\game.gif"  alt="Snapface logo" >
+  <img class="image_menu" (click)="onClickMenuGame()" src="\assets\image\game.gif"  alt="Snapface logo" >
   <div class="landing-links">
-    <button style="color:aliceblue" (click)="onContinue()">Continuer vers le menu d'ExpSharing</button>
+    <button style="color:aliceblue" (click)="onClickMenuGame()">Continuer vers le menu d'Exp Jeux Vidéo</button>
   </div>
 </div>

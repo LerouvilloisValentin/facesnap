@@ -4,7 +4,7 @@
 *ngIf="faceSnap$ | async as faceSnap"
 >
 <h2>{{ faceSnap.title | titlecase }}</h2>
-<button routerLink="/facesnaps" style="color:white">Back</button>
+<button routerLink="/destinations" style="color:white">Back</button>
 <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" >
 <p>{{ faceSnap.description }}</p>
 <p *ngIf="faceSnap.location"> photo prise à {{ faceSnap.location }}</p>
