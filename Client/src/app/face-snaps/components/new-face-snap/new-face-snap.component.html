@@ -9,22 +9,21 @@
       <label for="description">Description</label>
       <textarea id="description" type="text" formControlName="description" rows="4"></textarea>
     </div>
-    <!-- <div class="form-group">
+    <div class="form-group">
         <label for="imageUrl">URL de l'image</label>
         <input id="imageUrl" type="text" formControlName="imageUrl">
-    </div> -->
-    <div>
-      <!-- Affichage de l'image -->
+    </div>
+    <!-- Affichage de l'image -->
+    <!-- <div>
       <img *ngIf="imageUrl" [src]="imageUrl" alt="Image Preview" style="max-width: 300px; max-height: 300px;" />
 
-      <!-- Bouton pour ajouter une image -->
       <input type="file" (change)="onFileSelected($event)" accept=".jpg, .jpeg, .png" />
       <button style ="color:aliceblue"(click)="uploadImage()">Ajouter une image</button>
-    </div>
-    <div class="form-group">
+    </div> -->
+    <!-- <div class="form-group">
         <label for="location">Lieu</label>
         <input id="location" type="text" formControlName="location">
-    </div>
+    </div> -->
     <div class="action-buttons">
       <button type="submit" style ="color:aliceblue" (click)="onSubmitForm()" [disabled]="snapForm.invalid">Enregistrer</button>
     </div>
@@ -35,5 +34,4 @@
   <p>Mis en ligne {{ faceSnap.createdDate | date: 'à HH:mm, le d MMMM yyyy' }}</p>
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
   <p>{{ faceSnap.description }}</p>
-  <p *ngIf="faceSnap.location">Photo prise à {{ faceSnap.location }}</p>
 </div>

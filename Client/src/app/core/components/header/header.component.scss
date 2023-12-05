@@ -1,12 +1,16 @@
 header {
   text-align: center;
   background-color: #cac7c7;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 20px;
   background-image: linear-gradient(rgba(159, 106, 106, 0.7), rgba(6, 6, 6, 1));
   // background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px solid red($color: #f00c0c);
+}
+
+nav{
+  margin-bottom: 10px;
 }
 
 a {

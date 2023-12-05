@@ -6,12 +6,10 @@
 <button routerLink="/culinaire" style="color:white">Back</button>
 <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" >
 <p>{{ faceSnap.description }}</p>
-<p *ngIf="faceSnap.location"> photo prise à {{ faceSnap.location }}</p>
 <p>Mise en ligne le {{ faceSnap.createdDate | date: 'longDate'}}</p>
 <p>
   <!-- <button (click)="onSnap(faceSnap.id)">{{buttonText}}</button> -->
  <span [ngStyle]="{ color: 'rgb(0,'+ faceSnap.snaps +',0)'}"> {{ faceSnap.snaps }}</span>
 </p>
-<p>{{ 4346234.36 | number}}</p>
 </div>
 </ng-container>
