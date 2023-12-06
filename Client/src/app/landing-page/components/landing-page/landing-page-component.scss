@@ -1,6 +1,6 @@
 .landing-block {
   position: absolute;
-  top: 110%;
+  top: 115%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -20,11 +20,12 @@ button{
   opacity: 0.8;
   margin-bottom: 15px;
   margin-top: 3%;
+  cursor: pointer;
 }
 
 .introduction{
   color: aliceblue;
-  padding-bottom: 0%;
+  padding-bottom: 2%;
   text-align: center;
   font-weight: bold;
   font-size: 1.2em;

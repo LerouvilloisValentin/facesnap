@@ -34,5 +34,5 @@ export class SingleFaceSnapComponent implements OnInit{
             tap(() => this.buttonText = 'Oh Snap!')
         );
     }
-}
+  }
 }
