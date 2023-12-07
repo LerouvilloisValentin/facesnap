@@ -4,7 +4,7 @@
   >
   <h2>{{ faceSnap.title | titlecase }}</h2>
   <button style="color:white" routerLink="/game">Back</button>
-  <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" >
+  <img *ngIf="faceSnap.imageUrl" [src]="faceSnap.imageUrl" [alt]="faceSnap.title" >
   <p>{{ faceSnap.description }}</p>
   <p style="color: rgb(199, 86, 86)">Mise en ligne le {{ faceSnap.createdDate | date: 'longDate'}}</p>
   <p>
