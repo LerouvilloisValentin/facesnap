@@ -53,7 +53,7 @@ export class NewFaceSnapComponent implements OnInit {
     this.snapForm = this.formBuilder.group({
       title: [null, Validators.required],
       description: [null, Validators.required],
-      imageUrl: [null ,Validators.required, Validators.pattern(this.urlRegex)],
+      imageUrl: [null , Validators.pattern(this.urlRegex)],
       location: [null]
     },
     {

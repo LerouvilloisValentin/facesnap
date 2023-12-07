@@ -56,10 +56,10 @@ button {
   color: rgb(35, 56, 35);
   button {
     box-shadow: lightgreen 3px 3px 7px;
-    color: rgb(219, 168, 86);
     font-weight: bold;
     &:active {
       box-shadow: lightgreen 0 0 5px;
+
     }
   }
 }

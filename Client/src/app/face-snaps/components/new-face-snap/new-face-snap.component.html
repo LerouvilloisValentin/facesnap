@@ -1,5 +1,6 @@
 <div class="form-card">
   <h2>NOUVEAU FACESNAP</h2>
+  <p> Si vous souhaitez ajouter un URL d'image, il faut depuis une image libre de droit dans google par exemple, faire un clique gauche sur l'image, et cliquer sur "ouvrir l'image dans un nouvel onglet" et copier le lien dans le champs ci-dessous URL de l'image. </p>
   <form [formGroup]="snapForm">
     <div class="form-group">
       <label for="title">Titre</label>
@@ -32,6 +33,6 @@
 <div class="face-snap-card" *ngIf="faceSnapPreview$ |async as faceSnap" >
   <h2>{{ faceSnap.title | uppercase }}</h2>
   <p>Mis en ligne {{ faceSnap.createdDate | date: 'à HH:mm, le d MMMM yyyy' }}</p>
-  <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+  <img *ngIf="faceSnap.imageUrl" [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
   <p>{{ faceSnap.description }}</p>
 </div>

@@ -6,10 +6,10 @@
   <button style="color:white" routerLink="/game">Back</button>
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" >
   <p>{{ faceSnap.description }}</p>
-  <p>Mise en ligne le {{ faceSnap.createdDate | date: 'longDate'}}</p>
+  <p style="color: rgb(199, 86, 86)">Mise en ligne le {{ faceSnap.createdDate | date: 'longDate'}}</p>
   <p>
     <!-- <button (click)="onSnap(faceSnap.id)">{{buttonText}}</button> -->
-   <span [ngStyle]="{ color: 'rgb(0,'+ faceSnap.snaps +',0)'}"> {{ faceSnap.snaps }}</span>
+   <!-- <span [ngStyle]="{ color: 'rgb(0,'+ faceSnap.snaps +',0)'}"> {{ faceSnap.snaps }}</span> -->
   </p>
   </div>
   </ng-container>

@@ -20,19 +20,19 @@ export class SingleFaceSnapComponent implements OnInit{
     ){}
 
   ngOnInit() {
-    this.buttonText= 'Oh Snap!'
+    this.buttonText= 'DarkMode'
     const faceSnapId = +this.route.snapshot.params['id']
     this.faceSnap$ = this.faceSnapsService.getFaceSnapById(faceSnapId)
   }
-  onSnap(faceSnapId: number) {
-    if (this.buttonText === 'Oh Snap!') {
-        this.faceSnap$ = this.faceSnapsService.snapFaceSnapById(faceSnapId, 'snap').pipe(
-            tap(() => this.buttonText = 'Oops, unSnap!')
-        );
-    } else {
-        this.faceSnap$ = this.faceSnapsService.snapFaceSnapById(faceSnapId, 'unsnap').pipe(
-            tap(() => this.buttonText = 'Oh Snap!')
-        );
-    }
-  }
+  // onSnap(faceSnapId: number) {
+  //   if (this.buttonText === 'DarkMode') {
+  //       this.faceSnap$ = this.faceSnapsService.snapFaceSnapById(faceSnapId, 'snap').pipe(
+  //           tap(() => this.buttonText = 'GreenMode')
+  //       );
+  //   } else {
+  //       this.faceSnap$ = this.faceSnapsService.snapFaceSnapById(faceSnapId, 'unsnap').pipe(
+  //           tap(() => this.buttonText = 'DarkMode')
+  //       );
+  //   }
+  // }
 }

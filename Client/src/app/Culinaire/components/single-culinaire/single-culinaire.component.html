@@ -1,14 +1,14 @@
 <ng-container #contentToReuse>
 <div class="face-snap-card"
-*ngIf="faceSnap$ | async as faceSnap"
->
+[ngClass]="{snapped : buttonText === 'DarkMode'}"
+*ngIf="faceSnap$ | async as faceSnap">
 <h2>{{ faceSnap.title | titlecase }}</h2>
 <button routerLink="/culinaire" style="color:white">Back</button>
-<img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" >
+<img *ngIf="faceSnap.imageUrl" [src]="faceSnap.imageUrl" [alt]="faceSnap.title" >
 <p>{{ faceSnap.description }}</p>
-<p>Mise en ligne le {{ faceSnap.createdDate | date: 'longDate'}}</p>
+<p style="color: rgb(199, 86, 86)">Mise en ligne le {{ faceSnap.createdDate | date: 'longDate'}}</p>
 <p>
-  <!-- <button (click)="onSnap(faceSnap.id)">{{buttonText}}</button> -->
+  <!-- <button style="color:white" (click)="onSnap(faceSnap.id)">{{buttonText}}</button> -->
  <!-- <span [ngStyle]="{ color: 'rgb(0,'+ faceSnap.snaps +',0)'}"> {{ faceSnap.snaps }}</span> -->
 </p>
 </div>

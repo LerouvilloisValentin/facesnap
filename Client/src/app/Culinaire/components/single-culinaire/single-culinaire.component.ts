@@ -17,23 +17,20 @@ export class SingleCulinaireComponent {
 
   constructor(
     private  culinaireService : CulinaireServices,
-    private  faceSnapsService : FaceSnapsServices,
     private route : ActivatedRoute
     ){}
 
   ngOnInit() :void {
+    this.buttonText= 'DarkMode'
     const culinaireId = +this.route.snapshot.params['id']
     this.faceSnap$ = this.culinaireService.getculinaireById(culinaireId)
   }
-  onSnap(faceSnapId: number) {
-    if (this.buttonText === 'Oh Snap!') {
-        this.faceSnap$ = this.faceSnapsService.snapFaceSnapById(faceSnapId, 'snap').pipe(
-            tap(() => this.buttonText = 'Oops, unSnap!')
-        );
-    } else {
-        this.faceSnap$ = this.faceSnapsService.snapFaceSnapById(faceSnapId, 'unsnap').pipe(
-            tap(() => this.buttonText = 'Oh Snap!')
-        );
-    }
-  }
+  // onSnap(faceSnapId: number) {
+  //   if (this.buttonText === 'DarkMode') {
+  //           tap(() => this.buttonText = 'GreenMode')
+
+  //   } else {
+  //           tap(() => this.buttonText = 'DarkMode')
+  //   }
+  // }
 }
