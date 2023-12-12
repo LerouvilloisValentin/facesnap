@@ -3,7 +3,7 @@
   *ngIf="faceSnap$ | async as faceSnap"
   >
   <h2>{{ faceSnap.title | titlecase }}</h2>
-  <button style="color:white" routerLink="/game">Back</button>
+  <button style="color:rgb(235, 230, 230)" routerLink="/game">Back</button>
   <img *ngIf="faceSnap.imageUrl" [src]="faceSnap.imageUrl" [alt]="faceSnap.title" >
   <p>{{ faceSnap.description }}</p>
   <p style="color: rgb(208, 86, 86)">Mise en ligne le {{ faceSnap.createdDate | date: 'longDate'}}</p>
